@@ -1,5 +1,7 @@
 # SI language discrepancy map
 
+> Proof: PROOF-C77-SI-DISCREPANCY-001
+
 **Date:** 2026-09-26  
 **Standard:** `docs/canon/SUPER_INTELLIGENCE_LANGUAGE_STANDARD.md`  
 **Prior close:** #865 / PR #964
@@ -35,7 +37,7 @@ This map is how we resolve leftovers without a blind `AI` → `SI` replace.
 | MASTER-CODEX §3.5 / §6.2 | AI Dividend | D (program name) |
 | MASTER-CODEX §5.5 | Stanford AI Index 2026 | C |
 | MASTER-CODEX §2.2 heading | Artificial Twin | D |
-| README world sentence | Autonomous AI agents / AI researchers | C |
+| README world sentence | field researchers | C |
 | `docs/os/GAIA-SUPER-OS.md` | AI-NATIVE KERNEL | A leftover — next living pass |
 | `Documents/**` | many Artificial Intelligence strings | E |
 
