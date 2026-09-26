@@ -1,0 +1,40 @@
+# Listed bind for #835. Reuses existing gates. Does not invent validate-tablets.
+# Branch protection "required check" is owner-side and is not set by this file.
+name: tablet-validation
+
+on:
+  pull_request:
+    paths:
+      - 'docs/tablets/**'
+      - 'proofs/**'
+      - 'docs/canon/**'
+      - 'docs/color/color-map.json'
+      - '.github/workflows/tablet-validation.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/tablets/**'
+      - 'proofs/**'
+      - 'docs/canon/**'
+      - 'docs/color/color-map.json'
+      - '.github/workflows/tablet-validation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  tablets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Canon integrity T-001–T-005
+        run: python tests/canon/test_canon_integrity.py
+      - name: Canon proof gate
+        env:
+          GITHUB_BASE_REF: ${{ github.base_ref }}
+        run: bash scripts/check_canon_proofs.sh
