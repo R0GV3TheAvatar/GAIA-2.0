@@ -1,8 +1,7 @@
 # External landscape — listed bind
 
 **Status:** listed review. Not a product adoption.  
-**META:** [#902](https://github.com/R0GV3TheAvatar/GAIA-2.0/issues/902)  
-**Epic:** [#904](https://github.com/R0GV3TheAvatar/GAIA-2.0/issues/904)
+**META:** [#902](https://github.com/R0GV3TheAvatar/GAIA-2.0/issues/902)
 
 | Note | Issue | Points at |
 | --- | --- | --- |
@@ -12,5 +11,10 @@
 | [vector-dbs.md](vector-dbs.md) | #862 | `gaia-memos`, `gaia-aikd`, `gaia-ukd` |
 | [multi-agent.md](multi-agent.md) | #863 | `gaia-agents`, `gaia-acp` |
 | [no-code.md](no-code.md) | #864 | `gaia-interface`, `gaia-ui`, `gaia-sdk` |
+| [dev-suite.md](dev-suite.md) | #867 | `gaia-sdk`, `gaia-cli`, `gaia-interface` |
+| [security-pillars.md](security-pillars.md) | #868 | `gaia-security`, `gaia-acp` |
+| [learning.md](learning.md) | #870 | `gaia-aimd`, `gaia-runtime` |
+| [economy.md](economy.md) | #871 | `governance/` |
+| [gaianet.md](gaianet.md) | #872 | `gaia-gateway`, `gaia-acp` |
 
-No new crate. No provider SDK. No Qdrant stand-up (#723 stays SFS). No ACP RFC publish. No studio runtime.
+No new crate. No studio runtime. No trainer. No token. No network daemon. #873 stays open.
